@@ -7,6 +7,7 @@ import javax.persistence.ManyToOne;
 import org.springframework.data.annotation.CreatedDate;
 
 import com.mysite.sbb.question.Question;
+import com.mysite.sbb.user.SiteUser;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -33,4 +34,7 @@ public class Answer {
 
     @ManyToOne
     private Question question;
+    
+    @ManyToOne
+    private SiteUser author;
 }
