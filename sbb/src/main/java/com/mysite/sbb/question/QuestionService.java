@@ -30,7 +30,7 @@ import lombok.RequiredArgsConstructor;
 public class QuestionService {
 
     private final QuestionRepository questionRepository;
-
+    
     private Specification<Question> search(String kw) {
         return new Specification<>() {
             private static final long serialVersionUID = 1L;
